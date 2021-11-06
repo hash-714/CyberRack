@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+<link rel="icon" href="714v2.png">
+
+
+
+
+
+
+<style>
+
+.button-wrapper a {
+    width: 250px;
+}
+
+.button-wrapper a.button1.a {
+    width: 250px;
+    text-align: center;
+}
+
+
+
+a.button1{
+display:inline-block;
+padding:0.35em 1.2em;
+border:0.15em solid #000000;
+margin:0 0.3em 0.3em 0;
+border-radius:0.4em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:500;
+color:#000000;
+text-align:center;
+transition: all 0.2s;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size:30px;
+}
+a.button1:hover{
+color:#000000;
+background-color:#FFFFFF;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+margin:0.4em auto;
+ }
+}
+
+
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: black;
+    background-size: 600% 600%;
+	color: white;
+	text-align: center;
+	overflow-y: ;
+  overflow-x: ;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+}
+
+#container {
+	text-align: left;
+	padding-left: 25px;
+
+}
+
+
+.lemmon714img {
+  overflow: hidden;
+  float: right;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.loader,
+        .loader:after {
+            border-radius: 50%;
+            width: 10em;
+            height: 10em;
+        }
+        .loader {         
+            background-image: url("714loading.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            background-size: 100px;
+            background-position-y: 18.5px;
+            margin: 60px auto;
+            font-size: 10px;
+            position: relative;
+            text-indent: -9999em;
+            border-top: 2.1em solid rgba(56, 56, 56, 0.2);
+            border-right: 2.1em solid rgba(56, 56, 56, 0.2);
+            border-bottom: 2.1em solid rgba(56, 56, 56, 0.2);
+            border-left: 2.1em solid #000000;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation: load8 1.1s infinite linear;
+            animation: load8 1.1s infinite linear;
+        }
+        @-webkit-keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        #loadingDiv {
+            position:absolute;;
+            padding-top: 200px;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:rgb(255, 255, 135);
+        }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    
+
+</style>
+</head>
+
+<body>
+
+    
+
+<img style="padding-left: 00px;" height="40%" width="50%" src="Mainlogo.png" alt="CyberRack Logo">
+
+<div class="text">
+<h1> Under Maintence, stay tuned!</h1>
+</div>
+
+
+
+<div class="button-wrapper">
+<a href="index.html" class="button1">Desktop Version</a>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+      showImage();
+      setInterval(hideImage, 7000);
+    },3000);
+  });
+  function hideImage(){
+    document.getElementById( "imgHideShow" ).style.display = "none" ;
+  }
+  function showImage(){
+    document.getElementById( "imgHideShow" ).style.display = "block" ;
+  }
+</script>
+
+
+<script>msg = " CyberRack ";
+msg = "CyberRack" + msg;position = 0;
+function scrolltitle() {
+document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
+if (position > msg.length) position = 0
+window.setTimeout("scrolltitle()",170);
+}
+scrolltitle();</script>
+
+
+
+
+</html>
