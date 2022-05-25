@@ -179,6 +179,23 @@ body {
     }
     100% {
         background-position: 0% 50%;
+	    
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
     
 
 </style>
@@ -191,7 +208,7 @@ body {
 <img style="padding-left: 00px;" height="30%" width="100%" src="Mainlogo.png" alt="CyberRack Logo">
 
 <div class="text">
-<h1> Under Maintence, stay tuned!</h1>
+<h1 class="linear-wipe"> Under Maintence, stay tuned!</h1>
 </div>
 <a href="christmascd.html"><img src="santa.png" alt="santa hat" width="25px" height="25px">	
 <a href="halloweencd.html"><img src="halloweenlink.png" alt="pumpkin" width="25px" height="25px">
