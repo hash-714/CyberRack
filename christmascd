@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+<link rel="icon" href="714v2.png">
+
+
+
+
+
+
+<style>
+
+.button-wrapper a {
+    width: 10px;
+}
+
+.button-wrapper a.button1.a {
+    width: 10px;
+    text-align: center;
+}
+
+
+a.button1{
+display:inline-block;
+padding:0.15em 1.2em;
+border:0.1em solid #03F013;
+margin:0 0.1em 0.1em 0;
+border-radius:0.1em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:500;
+color:#03F013;
+text-align:center;
+transition: all 0.2s;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size:40px;
+}
+a.button1:hover{
+color:#03F013;
+background-color:white;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+margin:0.1em auto;
+ }
+}
+
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+	background-image: url('christmascdimg.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #03F013;
+  
+}
+
+
+p {
+	font-size: 200px;
+	padding-top: 280px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="button1">Back</a>
+    
+<p id="demo"></p>
+
+
+<br>
+
+
+
+
+</body>
+
+
+
+
+
+
+<script>msg = " Lemmon 714 ";
+msg = "Lemmon 714" + msg;position = 0;
+function scrolltitle() {
+document.title = msg.substring(position, msg.length) + msg.substring(0, position); position++;
+if (position > msg.length) position = 0
+window.setTimeout("scrolltitle()",170);
+}
+scrolltitle();</script>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2021 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+
+
+
+</html>
