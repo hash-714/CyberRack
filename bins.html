@@ -46,8 +46,9 @@ h1{
 	width="960" height="960">
 
 </iframe>
-	
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4_rK3_iIv008Pfuv1TgsjthX9lD8_dMSfR3H0uxplpJ5SZw/viewform?embedded=true" width="640" height="408" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<button class="button1">Show form</button>
+<iframe class="iframe1" src="https://docs.google.com/forms/d/e/1FAIpQLSc4_rK3_iIv008Pfuv1TgsjthX9lD8_dMSfR3H0uxplpJ5SZw/viewform?embedded=true" width="640" height="408" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTf3vkGluQpTrYf4TCgxIRU3gvAscU7LLiT6PL3kbtR2_12E5aHVHLnkVwnrHA7FLPWIKrnKcgnfofR/pubhtml?gid=548230412&amp;single=true&amp;widget=true&amp;headers=false"
 	width="960" height="960">
@@ -57,6 +58,24 @@ h1{
 
 </body>
 
+	<script>
+		function hideToggle(button, elem) {
+ 
+$(button).toggle(
+  function () {
+    $(elem).hide();
+  },
+  function () {
+    $(elem).show();
+  }
+);
+    
+}
+
+hideToggle(".button1", ".iframe1");
+hideToggle(".button2", ".iframe2");
+		
+	</script>
 
 
 <script>msg = " CyberRack ";
