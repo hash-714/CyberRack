@@ -40,12 +40,55 @@ h1{
 </head>
 
 <body>
+	
+<h1> Bin Day Calender </h1>
+<br>
+  <div 
+   id="aniframeupstart3" 
+   align="center" 
+   style="display: none;">
+<iframe 
+   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTf3vkGluQpTrYf4TCgxIRU3gvAscU7LLiT6PL3kbtR2_12E5aHVHLnkVwnrHA7FLPWIKrnKcgnfofR/pubhtml?gid=888205070&amp;single=true&amp;widget=true&amp;headers=false" 
+   margin="0" 
+   border="0" 
+   scrollbars="auto" 
+   width="640" 
+   height="709">
+</iframe>
+</div>
+</div>
+<br>
 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTf3vkGluQpTrYf4TCgxIRU3gvAscU7LLiT6PL3kbtR2_12E5aHVHLnkVwnrHA7FLPWIKrnKcgnfofR/pubhtml?gid=888205070&amp;single=true&amp;widget=true&amp;headers=false"
-	width="960" height="960">
 
-<h1> Submit applicants result </h1>
+
+<span 
+   id="viewiframe3" 
+   onclick="DoViewIFRAME3('viewiframe3','hideiframe3','aniframeupstart3');" 
+   style="line-height: 16px;
+      font-size: 30px; 
+      font-weight: bold; 
+      font-family: Yanone Kaffeesatz; 
+      background-color: white;
+      color: black;">
+<nobr>View Form</nobr>
+</span>
+<span 
+   id="hideiframe3" 
+   onclick="DoHideIFRAME3('hideiframe3','aniframeupstart3','viewiframe3');" 
+   style="display: none; 
+      line-height: 16px; 
+      font-size: 30px; 
+      font-weight: bold; 
+      font-family: Yanone Kaffeesatz; 
+      background-color: white;
+      color: black;">
+<nobr>Hide Form</nobr>
+</span>
+
+</div>
+
+<h1> Submit new job </h1>
 <br>
   <div 
    id="aniframeupstart" 
@@ -100,7 +143,7 @@ h1{
 
 
 
-<h1> Submit Blacklisted Accounts </h1>
+<h1> View jobs </h1>
 <br>
   <div 
    id="aniframeupstart2"
@@ -167,6 +210,19 @@ document.getElementById(tid2).style.display = "";
 document.getElementById(tid3).style.display = "";
 }
 function DoHideIFRAME2(tid1,tid2,tid3) {
+document.getElementById(tid1).style.display = "none";
+document.getElementById(tid2).style.display = "none";
+document.getElementById(tid3).style.display = "";
+}
+//--></script>	
+
+<script type="text/javascript" language="JavaScript"><!--
+function DoViewIFRAME3(tid1,tid2,tid3) {
+document.getElementById(tid1).style.display = "none";
+document.getElementById(tid2).style.display = "";
+document.getElementById(tid3).style.display = "";
+}
+function DoHideIFRAME3(tid1,tid2,tid3) {
 document.getElementById(tid1).style.display = "none";
 document.getElementById(tid2).style.display = "none";
 document.getElementById(tid3).style.display = "";
