@@ -5,37 +5,25 @@
   
   <style>
     
-    html { height: 100%; }
-
-body { 
-  background: #333; 
-  text-align: center;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    div.text {
+	background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
-h1 { font-size: 20vw; }
-
-.linear-wipe {
-  text-align: center;
-  
-  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
-  background-size: 200% auto;
-  
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  animation: shine 1s linear infinite;
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
 }
     
     </style>
@@ -43,7 +31,7 @@ h1 { font-size: 20vw; }
   </head>
   <body>
     
-    <h1 class="linear-wipe">test</h1>
+    <div class="text">Test</div>
     
   </body>
   
