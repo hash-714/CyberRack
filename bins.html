@@ -47,8 +47,37 @@ h1{
 
 </iframe>
 
-<button class="button1">Show form</button>
+	<h1>Submit new job</h1>
+	<br>
+	<div
+	     id="aniframeupstrart"
+	     align="center"
+	     style="display:none;">
 <iframe class="iframe1" src="https://docs.google.com/forms/d/e/1FAIpQLSc4_rK3_iIv008Pfuv1TgsjthX9lD8_dMSfR3H0uxplpJ5SZw/viewform?embedded=true" width="640" height="408" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
+	</div>
+	<br>
+	
+<span
+      id="viewiframe"
+      onclick="DoViewIFRAME('viewiframe','hideiframe','aniframeupstart');"
+      style="line-height: 16px;
+	     font-size: 30px;
+	     font-weight: bold;
+	     background-color: white;
+	     <nobr>View Form</nobr>
+	     </span>
+	     <span 
+	     id="hideiframe"
+			    onclick="DoHideIFRAME('hideiframe','aniframeupstart','viewiframe');"
+	style="display: none;
+      line-height: 16px;
+      font-size: 30px;
+      font-weight: bold;
+      <nobr>Hide Form</nobr>
+</span>
+</div>
+	     
 	
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTf3vkGluQpTrYf4TCgxIRU3gvAscU7LLiT6PL3kbtR2_12E5aHVHLnkVwnrHA7FLPWIKrnKcgnfofR/pubhtml?gid=548230412&amp;single=true&amp;widget=true&amp;headers=false"
 	width="960" height="960">
