@@ -35,21 +35,41 @@ h1{
 
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 
 </head>
 
 <body>
-	<h1> The Libary </h1>
+
+<h1> The Libary </h1>
 <p>Knives Out Screenplay</p>
+
+<div class="row">
+  <div class="column">
 <a href="knivesout.html"><img src="kocover.jpg" alt="KNIVES OUT COVER" style="width:200px;height:275px;"></a>
+</div>
 
 <p>And then there were none</p>
+<div class="column">
 <a href="attwn.html"><img src="and-then-there-were-none.jpg" alt="KNIVES OUT COVER" style="width:200px;height:275px;"></a>
+</div>
 
 <p>Murder on the Orient Express</p>
+<div class="column">
 <a href="motoe.html"><img src="motoe.jpg" alt="KNIVES OUT COVER" style="width:200px;height:275px;"></a>
-
+</div>
 </body>
 
 <script>msg = " CyberRack ";
