@@ -13,16 +13,6 @@
 
 <style>
 
-body{
-	
-  background-image: url('micheal.jpg');
-  background-repeat: no-repeat;
-	color: white;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	text-align: center;
-	
-}
-
 h1{
 	font-size: 70px;
 
@@ -33,13 +23,49 @@ h1{
 
 }
 
+@import "compass/css3";
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.background-image {
+  background: url('micheal.jpg') no-repeat center center fixed;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  opacity: 0;
+  
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2s;
+}
+
+.background-image.visible {
+  opacity: 1;
+}
+
 </style>
 
 </head>
 
 <body>
 
-
+    <div class="background-image">
+  
+    </div>
 
 	
 </body>
@@ -62,7 +88,15 @@ window.setTimeout("scrolltitle()",170);
 }
 scrolltitle();</script>
 
+<script>
 
+$(document).ready(function() {
+  $('.background-image').on('webkitAnimationEnd', function(e) {
+    $(this).addClass('visible');
+  });
+});
+
+</script>
 
 
 
